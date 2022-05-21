@@ -1,0 +1,247 @@
+/* Box Sizing/Body */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Calibri, sans-serif;
+    font-size: 22px;
+    opacity: 0.9;
+    color: seashell;
+}
+
+body {
+    background-color: black;
+}
+
+/* Text */
+
+h2 {
+    margin: 0.5rem 0.5rem 0.75rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0.5rem 0.5rem 0.75rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0.5rem 0.5rem 0.75rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0.5rem 0.5rem 0.75rem 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Header/Nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 69px;
+    width: 100vw;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 10;
+}
+
+header img {
+    padding: 0 0 0 10px;
+    height: 50px;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav ul > li {
+    display: inline;
+    list-style: none;
+}
+
+nav ul > li > a {
+    color: seashell;
+    padding: 10px 10px 10px 10px;
+    transition-property: opacity, text-decoration;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+nav ul > li > a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    transition-property: opacity, text-decoration;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+/* Website Hero */
+
+#mission {
+    display: flex;
+    height: 700px;
+    max-width: 1200px;
+    margin: 69px auto;
+    background-image: url('../img/img-mission-background.jpg');
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+mission-banner {
+    width: 1200px;
+    text-align: center;
+    background-color: black;
+}
+
+/* Tea of the Month Flexbox */
+
+#featured-tea {
+    text-align: center;
+}
+
+tea-items {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+tea-items > figure {
+    margin: 0.5rem;
+    transition: opacity 0.1s ease-out;
+}
+
+tea-items > figure > img {
+    height: 200px;
+    width: 300px;
+}
+
+tea-items > figure:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s ease-in;
+    cursor: pointer;
+}
+
+
+figcaption {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Location List Flexbox */
+
+#locations {
+    margin: 69px auto 0 auto;
+    min-height: 500px;
+    max-width: 1200px;
+    background-image: url('../img/img-locations-background.webp');
+    background-position: right;
+    text-align: center;
+}
+
+location-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: 500px;
+    max-width: 1200px;
+}
+
+location-list > h2 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+location-item h3 {
+    margin: 0;
+}
+
+location-item {
+    background-color: black;
+    width: 300px;
+    margin: 0 20px 15px 20px;
+    transition: opacity 0.1s ease-out;
+}
+
+location-item a {
+    display: block;
+    text-decoration: none;
+    color: seashell;
+    padding: 20px 0 20px 0;
+}
+
+location-item p {
+    line-height: 3;
+}
+
+
+location-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in;
+}
+
+/* Contact Section */
+
+#contact {
+    height: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+}
+
+#contact > h5 {
+    line-height: 3;
+}
+
+/* Footer Section */
+
+footer h5 {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+}
+
+footer a {
+    color: seashell;
+    transition-property: opacity, text-decoration;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+footer a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    transition-property: opacity, text-decoration;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
